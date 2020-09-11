@@ -1,3 +1,4 @@
-# SIARD-CITS
+Content Information Type Specification for Relational Databases (using SIARD)
+=============================================================================
 
-This is a placeholder repository for the Content Information Type Specification for SIARD. Check back soon for more information!
+The purpose of this repository is to handle the Content Information Type Specification for Relational Databases (RDB) using the format Software Independent Archiving of Relational Databases (SIARD).
