@@ -1,4 +1,4 @@
-  ![](pictures/draft.png)
+  ![](SIARD-CITS/figures/draft.png)
 
 ## 1 Preface
 
@@ -9,7 +9,7 @@ This E-ARK specification is part of a family of specifications that provide a co
 The foundation for these specifications is the Reference Model for an Open Archival Information System (OAIS) which has Information Packages at its core. Familiarity with the core functional entities of OAIS is a prerequisite for understanding the specifications. A visualisation of the current specification network can be seen here:
 
  
-  ![](pictures/The_E-ARK_specification_dependency_hierarchy.png)
+  ![](SIARD-CITS/figures/The_E-ARK_specification_dependency_hierarchy.png)
  
    
   **The E-ARK specification dependency hierarchy**
@@ -151,9 +151,9 @@ The purpose of this document is to describe the Content Information Type Specifi
 
 This section introduces the structure of the data model, which is based on a layered approach for information package definitions (Figure 1). The Common Specification for Information Packages (CSIP) forms the outermost layer. The general SIP, AIP and DIP specifications add, respectively, submission, archiving and dissemination information to the CSIP specification. The third layer of the model represents specific content information type specifications, such as this CITS SIARD specification. Additional layers for business-specific specifications and local variant implementations of any specification can be added. 
 
- ![](pictures/Data_Model_Structure.png)
+ ![](SIARD-CITS/figures/Data_Model_Structure.png)
 
-<a name="fig1"></a>
+
 **Figure 1: Data Model Structure** 
 
 Every level in the data model structure inherits metadata entities and elements from the higher levels. In order to increase adoption, a flexible schema has been developed. This will allow for extension points where the schema in each layer can be extended to accommodate additional information on the next specific layer until, finally, the local implementation can add specific entities or metadata elements to satisfy very specific local needs. Extension points can be implemented by:
@@ -198,7 +198,7 @@ This CITS SIARD specification has been written during the eArchiving building bl
 A visualisation of an example of a valid CITS SIARD-package is illustrated in Figure 2. The example and other examples can also be found as downloadable packages at this link: [https://github.com/DILCISBoard/SIARD-CITS/tree/master/examples](https://github.com/DILCISBoard/SIARD-CITS/tree/master/examples). The example is an information package where a database has LOBs that resides outside the .siard-file. See LOB details under section [3.8 {SIARD_lobs} -- requirements](#38-siard_lobs--requirements)
 
 
- ![](pictures/Information_Package_folder_structure.png)
+ ![](SIARD-CITS/figures/Information_Package_folder_structure.png)
 
 
 **Figure 2: Information Package folder structure**
