@@ -1,4 +1,4 @@
-  ![](../SIARD-CITS/figures/draft.png)
+  ![](../figures/draft.png)
 
 ## 1 Preface
 
