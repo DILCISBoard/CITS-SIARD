@@ -768,7 +768,7 @@ There should be documentation in the representations and/or in the information p
    		<td>Danish National Archives  </td>
    		<td>Included Layered Data Model and Documentation requirements  </td>
   	</tr>
-<tbody> 
+</tbody> 
 </table>
 
 
