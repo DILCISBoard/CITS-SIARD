@@ -285,14 +285,14 @@ and Usage</th>
 	</tr>
 	<tr>
 		<td>SIARD_6 Ref CSIP62 </td>
-		<td>fileSec Representation Content Information Type Specification mets/file Sec/fileGrp[ @USE=&#39;Representations&#39;]/@csip:CONTENTINFORMATIONTYPE </td>
+		<td>fileSec Representation Content Information Type Specification mets/fileSec/fileGrp[ @USE=&#39;Representations&#39;]/@csip:CONTENTINFORMATIONTYPE </td>
 		<td>There <b>MUST</b> be a minimum of one mets/file Sec/fileGrp[ @USE=&#39;Representations&#39;]/@csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; as taken from the CSIP Vocabulary for Content Information Type that direct to the representation METS.xml in the representation containing a relational database.</td>
 		<td>1..n MUST </td>
 	</tr>
 	<tr>
 		<td>SIARD_7 Ref CSIP63 </td>
-		<td>fileSec Other Content Information Type Specification mets/fileSec/fileGrp[@cs ip:CONTENTINFORMATIONTYPE=&#39; CITS_SIARD &#39;]/@csip:OTHERCONTENTINFORMATIONTYPE </td>
-		<td>For any mets/file Sec/fileGrp[ @csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; there <b>MUST</b> be a @csip:OTHERCONTENTINFORMATIONTYPE attribute with a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, D atabase_dump}.</td>
+		<td>fileSec Other Content Information Type Specification mets/fileSec/fileGrp/@csip:CONTENTINFORMATIONTYPE=&#39; CITS_SIARD &#39;]/@csip:OTHERCONTENTINFORMATIONTYPE </td>
+		<td>For any mets/fileSec/fileGrp/@csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; there <b>MUST</b> be a @csip:OTHERCONTENTINFORMATIONTYPE attribute with a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, Database_dump}.</td>
 		<td>1..1 MUST </td>
 	</tr>
 	<tr>
