@@ -568,14 +568,9 @@ There should be a submission agreement in the SIP representation that has been t
 </tbody>
 </table>
 
-
- 
-
-
 ## 5 AIP requirements
 
 None yet.
-
 
 ## 6 DIP requirements
 
@@ -629,7 +624,7 @@ There should be documentation in the representations and/or in the information p
 </tbody>
 </table>
 
-## Glossaty
+## Glossary
 
 
 <table>
