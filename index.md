@@ -635,8 +635,8 @@ There should be documentation in the representations and/or in the information p
 <table>
 <thead>
   	<tr>
-   		<th><strong>Name</strong> </th>
-   		<th><strong>Description</strong> </th>
+   		<th>Name </th>
+   		<th>Description </th>
   	</tr>
 </thead>
 <tbody>
