@@ -613,12 +613,9 @@ There should be documentation in the representations and/or in the information p
 		<td>SIARD_31 </td>
 		<td> </td>
 		<td>The (main) system-user dialogues <b>SHOULD</b> be documented, down to the identification of the database coulumns/fields involved in the dialogues, documented as a combination of: 
-			<ul>
-				<li><p>Screenshots, annotated with coulumn/field descriptions, stored in the Documentation folder.</p></li>
-				<li><p>User documentation describing the system-user dialogue, stored in the Documentation folder.</p></li>
-				<li><p>If views are not present, additional descriptions of the system (application) logic, stored in the Documentation folder.</p></li>
-			</ul>
-		</td>
+				1) Screenshots, annotated with coulumn/field descriptions, stored in the Documentation folder
+				2) User documentation describing the system-user dialogue, stored in the Documentation folder
+				3) If views are not present, additional descriptions of the system (application) logic, stored in the Documentation folder </td>
 		<td>1..n SHOULD </td>
 	<tr>
 		<td>SIARD_32 </td>
