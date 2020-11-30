@@ -353,7 +353,7 @@ and Usage</th>
 	<tr>
 		<td>SIARD_12 Ref CSIP6 </td>
 		<td>METS Profile mets/@PROFILE </td>
-		<td>For information packages that primarily contain relational databases the value in the @PROFILE <b>MUST</b> be &quot;https:/ /SIARD.dilcis. eu/profile/CIT S_SIARD_repres entation.xml&quot;</td>
+		<td>For information packages that primarily contain relational databases the value in the @PROFILE <b>MUST</b> be &quot;https://SIARD.dilcis.eu/profile/CITS_SIARD_representation.xml&quot;</td>
 		<td>1..1 MUST </td>
 	</tr>
 	<tr>
@@ -414,7 +414,7 @@ Usage</th>
 	<tr>
 		<td>SIARD_16 </td>
 		<td> </td>
-		<td>The SIARD version of the SIARD-file <b>MUST</b> be the same as the version provided in mets/@csip:OTHERCONT ENTINFORMATIONTYPE and fileSec/fileGrp/fi le@csip:OTHERCONT ENTINFORMATIONTYPE</td>
+		<td>The SIARD version of the SIARD-file <b>MUST</b> be the same as the version provided in mets/@csip:OTHERCONTENTINFORMATIONTYPE and fileSec/fileGrp/file@csip:OTHERCONT ENTINFORMATIONTYPE</td>
 		<td>MUST </td>
 	</tr>
 	<tr>
@@ -432,7 +432,7 @@ Usage</th>
 	<tr>
 		<td>SIARD_19 </td>
 		<td> </td>
-		<td>The file name of the SIARD file representati ons/[RepresentationName]/data/[databaseName].siard <b>MAY</b> be the short database identifier of the database as specified in the &lt;dbname&gt; element of the metadata.xml file in the SIARD file but it is not recommended.</td>
+		<td>The file name of the SIARD file representations/[RepresentationName]/data/[databaseName].siard <b>MAY</b> be the short database identifier of the database as specified in the &lt;dbname&gt; element of the metadata.xml file in the SIARD file but it is not recommended.</td>
 		<td>MAY </td>
 	</tr>
 </tbody>
