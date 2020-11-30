@@ -770,67 +770,20 @@ Usage</th>
 </table>
 
 
-<table>
-  <tr>
-   <td colspan="3" ><strong>Project co-funded by the European Commission within the ICT Policy Support Programme</strong>
-   </td>
-  </tr>
-  <tr>
-   <td colspan="3" ><strong>Dissemination Level</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong>P</strong>
-   </td>
-   <td><strong>Public</strong>
-   </td>
-   <td>x
-   </td>
-  </tr>
-  <tr>
-   <td><strong>C</strong>
-   </td>
-   <td><strong>Confidential, only for members of the Consortium and the Commission Services</strong>
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
-
- 
-
-
-**<span style="text-decoration:underline;">REVISION HISTORY AND STATEMENT OF ORIGINALITY</span>**
-
 **Submitted Revisions History**
 
 
-
 <table>
+<thead>
   <tr>
-   <td><strong>Revision No.</strong>
-   </td>
-   <td><strong>Date</strong>
-   </td>
-   <td><strong>Authors(s)</strong>
-   </td>
-   <td><strong>Organisation</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
+   <td><strong>Revision No.</strong> </td>
+   <td><strong>Date</strong> </td>
+   <td><strong>Authors(s)</strong> </td>
+   <td><strong>Organisation</strong> </td>
+   <td><strong>Description</strong></td>
   </tr>
-  <tr>
-   <td>[Version]
-   </td>
-   <td>[Date]
-   </td>
-   <td>[Who]
-   </td>
-   <td>[Affiliation]
-   </td>
-   <td>[What]
-   </td>
-  </tr>
+</thead>
+<tbody>  
   <tr>
    <td>1.0
    </td>
@@ -867,6 +820,7 @@ Usage</th>
    <td>Included Layered Data Model and Documentation requirements
    </td>
   </tr>
+<tbody> 
 </table>
 
 
