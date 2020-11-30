@@ -597,7 +597,7 @@ There should be documentation in the representations and/or in the information p
 Usage</th>
 		<th>Card &amp; Level</th>
 	</tr>
-
+</thead>
 <tbody>
 	<tr>
 		<td>SIARD_29 </td>
@@ -632,24 +632,22 @@ Usage</th>
 		<td> </td>
 		<td>There <b>MAY</b> be videos or screen dumps from the system as seen from the user&#39;s point of view in the Documentation folder.</td>
 		<td>1..n SHOULD </td>
-	</tr>
-    </thead>        
+	</tr>      
 </table>
 
-<br/>
 
 ## Glossary
 
-**Table 2: Glossary**
-
-
 <table>
+<thead>
   <tr>
    <td><strong>Name</strong>
    </td>
    <td><strong>Description</strong>
    </td>
   </tr>
+</thead>
+<tbody>
   <tr>
    <td><strong>Content Information Type (CIT)</strong>
    </td>
@@ -688,6 +686,8 @@ Usage</th>
 
 
 <table>
+	<thead>
+
   <tr>
    <td colspan="2" ><strong>AUTHOR(S)</strong>
    </td>
@@ -698,6 +698,8 @@ Usage</th>
    <td>Organisation(s)
    </td>
   </tr>
+  </thead>
+<tbody>
   <tr>
    <td>Phillip Aasvang Tømmerholt
    </td>
