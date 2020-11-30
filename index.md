@@ -612,10 +612,7 @@ There should be documentation in the representations and/or in the information p
 	<tr>
 		<td>SIARD_31 </td>
 		<td> </td>
-		<td>The (main) system-user dialogues <b>SHOULD</b> be documented, down to the identification of the database coulumns/fields involved in the dialogues, documented as a combination of: 
-				1) Screenshots, annotated with coulumn/field descriptions, stored in the Documentation folder
-				2) User documentation describing the system-user dialogue, stored in the Documentation folder
-				3) If views are not present, additional descriptions of the system (application) logic, stored in the Documentation folder </td>
+		<td>The (main) system-user dialogues <b>SHOULD</b> be documented, down to the identification of the database coulumns/fields involved in the dialogues, documented as a combination of 1) Screenshots, annotated with coulumn/field descriptions, stored in the Documentation folder 2) User documentation describing the system-user dialogue, stored in the Documentation folder 3) If views are not present, additional descriptions of the system (application) logic, stored in the Documentation folder </td>
 		<td>1..n SHOULD </td>
 	<tr>
 		<td>SIARD_32 </td>
@@ -632,7 +629,7 @@ There should be documentation in the representations and/or in the information p
 </tbody>
 </table>
 
-## Glossary
+## Vocabulary
 
 
 <table>
@@ -667,6 +664,7 @@ There should be documentation in the representations and/or in the information p
 </table> 
 
 ## Authors
+
 
 <table>
 <thead>
