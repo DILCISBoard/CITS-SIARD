@@ -633,7 +633,7 @@ Usage</th>
 		<td>There <b>MAY</b> be videos or screen dumps from the system as seen from the user&#39;s point of view in the Documentation folder.</td>
 		<td>1..n SHOULD </td>
 	</tr>      
-</table>
+
 
 
 ## Glossary
@@ -678,7 +678,7 @@ Usage</th>
    <td>Software Independent Archival of Relational Databases
    </td>
   </tr>
-</table>
+
 
  
 
@@ -686,8 +686,7 @@ Usage</th>
 
 
 <table>
-	<thead>
-
+<thead>
   <tr>
    <td colspan="2" ><strong>AUTHOR(S)</strong>
    </td>
@@ -736,7 +735,7 @@ Usage</th>
    <td>Norwegian National Archives (Akrivverket)
    </td>
   </tr>
-</table>
+
 
 <table>
   <tr>
@@ -810,6 +809,7 @@ Usage</th>
 **<span style="text-decoration:underline;">REVISION HISTORY AND STATEMENT OF ORIGINALITY</span>**
 
 **Submitted Revisions History**
+
 
 
 <table>
