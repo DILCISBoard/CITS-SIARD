@@ -629,7 +629,7 @@ There should be documentation in the representations and/or in the information p
 </tbody>
 </table>
 
-## Vocabulary
+## Glossaty
 
 
 <table>
@@ -663,7 +663,7 @@ There should be documentation in the representations and/or in the information p
 </tbody>
 </table> 
 
-## Authors
+## Postface
 
 
 <table>
@@ -701,7 +701,7 @@ There should be documentation in the representations and/or in the information p
 </tbody>
 </table>
 
-## Revievers
+### Revievers
 <table>
 <thead>	
 	<tr>
