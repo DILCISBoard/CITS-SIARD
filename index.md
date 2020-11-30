@@ -597,7 +597,7 @@ There should be documentation in the representations and/or in the information p
 Usage</th>
 		<th>Card &amp; Level</th>
 	</tr>
-</thead>
+
 <tbody>
 	<tr>
 		<td>SIARD_29 </td>
