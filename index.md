@@ -642,10 +642,10 @@ Usage</th>
 <table>
 <thead>
   <tr>
-   <td><strong>Name</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
+   <th><strong>Name</strong>
+   </th>
+   <th><strong>Description</strong>
+   </th>
   </tr>
 </thead>
 <tbody>
@@ -685,8 +685,8 @@ Usage</th>
 <table>
 <thead>
   <tr>
-   <td>Name(s) </td>
-   <td>Organisation(s) </td>
+   <th>Name(s) </th>
+   <th>Organisation(s) </th>
   </tr>
 </thead>
 
@@ -733,10 +733,10 @@ Usage</th>
 <thead>	
  
   <tr>
-   <td>Name(s)
-   </td>
-   <td>Organisation(s)
-   </td>
+   <th>Name(s)
+   </th>
+   <th>Organisation(s)
+   </th>
   </tr>
  </thead> 
  <tbody>
@@ -776,11 +776,11 @@ Usage</th>
 <table>
 <thead>
   <tr>
-   <td><strong>Revision No.</strong> </td>
-   <td><strong>Date</strong> </td>
-   <td><strong>Authors(s)</strong> </td>
-   <td><strong>Organisation</strong> </td>
-   <td><strong>Description</strong></td>
+   <th><strong>Revision No.</strong> </th>
+   <th><strong>Date</strong> </th>
+   <th><strong>Authors(s)</strong> </th>
+   <th><strong>Organisation</strong> </th>
+   <th><strong>Description</strong></th>
   </tr>
 </thead>
 <tbody>  
