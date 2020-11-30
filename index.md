@@ -563,7 +563,7 @@ Usage</th>
 	<tr>
 		<td>SIARD_28 </td>
 		<td> </td>
-		<td>The submission agreement <b>SHOULD</b> list the documentation that is decided to be submitted to the archive. See [7 Documentation requirements](#7 documentation-requirements)</td>
+		<td>The submission agreement <b>SHOULD</b> list the documentation that is decided to be submitted to the archive. See [7 Documentation requirements](#7-documentation-requirements)</td>
 		<td>0..1 SHOULD </td>
 	</tr>
 </tbody>
