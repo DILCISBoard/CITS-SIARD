@@ -641,23 +641,23 @@ There should be documentation in the representations and/or in the information p
 </thead>
 <tbody>
   	<tr>
-   		<td><strong>Content Information Type (CIT)</strong> </td>
+   		<td>Content Information Type (CIT) </td>
    		<td>A type of a set of information that is the original target of preservation or that includes part or all of that information. It is an Information Object composed of its Content Data Object and its Representation Information. </td>
   	</tr>
   	<tr>
-  	 	<td><strong>DBMS</strong> </td>
+  	 	<td>DBMS </td>
    		<td>Database Management System </td>
   	</tr>
   	<tr>
-  		<td><strong>OAIS</strong> </td>
+  		<td>OAIS </td>
    		<td>Open Archival Information System </td>
   	</tr>
   	<tr>
-   		<td><strong>RDBMS</strong> </td>
+   		<td>RDBMS </td>
    		<td>Relational Database Management System </td>
   	</tr>
   	<tr>
-   		<td><strong>SIARD</strong> </td>
+   		<td>SIARD </td>
    		<td>Software Independent Archival of Relational Databases </td>
   	</tr>
 </tbody>
