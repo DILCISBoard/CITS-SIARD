@@ -722,7 +722,7 @@ Usage</th>
   <tr>
    <td>Arne-Kristian Groven
    </td>
-   <td>Norwegian National Archives (Akrivverket)
+   <td>Norwegian National Archives (Arkivverket)
    </td>
   </tr>
 </tbody>
@@ -731,40 +731,27 @@ Usage</th>
 ## Revievers
 <table>
 <thead>	
- 
   <tr>
-   <th>Name(s)
-   </th>
-   <th>Organisation(s)
-   </th>
+   <th>Name(s) </th>
+   <th>Organisation(s) </th>
   </tr>
  </thead> 
  <tbody>
   <tr>
-   <td>Janet Anderson
-   </td>
-   <td>Highbury/DNA
-   </td>
+   <td>Janet Anderson </td>
+   <td>Highbury/DNA  </td>
   </tr>
   <tr>
-   <td>Lauri Ratsep
-   </td>
-   <td>National Archives of Estonia
-   </td>
+   <td>Lauri Ratsep </td>
+   <td>National Archives of Estonia  </td>
   </tr>
   <tr>
-   <td>Jaime Kaminski
-   </td>
-   <td>Highbury/DNA
-   </td>
+   <td>Jaime Kaminski  </td>
+   <td>Highbury/DNA </td>
   </tr>
   <tr>
-   <td>Thomas Bolbroe
-   </td>
-   <td>The Danish National Archives
-   </td>
-  </tr>
-   </td>
+   <td>Thomas Bolbroe  </td>
+   <td>The Danish National Archives   </td>
   </tr>
 </tbody>
 </table>
@@ -785,40 +772,25 @@ Usage</th>
 </thead>
 <tbody>  
   <tr>
-   <td>1.0
-   </td>
-   <td>14-08-2020
-   </td>
-   <td>Phillip Aasvang Tømmerholt
-   </td>
-   <td>Danish National Archives
-   </td>
-   <td>DRAFT version for internal review
-   </td>
+   <td>1.0  </td>
+   <td>14-08-2020 </td>
+   <td>Phillip Aasvang Tømmerholt  </td>
+   <td>Danish National Archives </td>
+   <td>DRAFT version for internal review </td>
   </tr>
   <tr>
-   <td>1.1
-   </td>
-   <td>31-08-2020
-   </td>
-   <td>Phillip Aasvang Tømmerholt
-   </td>
-   <td>Danish National Archives
-   </td>
-   <td>DRAFT version with changes based on internal review
-   </td>
+   <td>1.1 </td>
+   <td>31-08-2020 </td>
+   <td>Phillip Aasvang Tømmerholt  </td>
+   <td>Danish National Archives  </td>
+   <td>DRAFT version with changes based on internal review </td>
   </tr>
   <tr>
-   <td>1.2
-   </td>
-   <td>29-09-2020
-   </td>
-   <td>Phillip Aasvang Tømmerholt
-   </td>
-   <td>Danish National Archives
-   </td>
-   <td>Included Layered Data Model and Documentation requirements
-   </td>
+   <td>1.2 </td>
+   <td>29-09-2020 </td>
+   <td>Phillip Aasvang Tømmerholt  </td>
+   <td>Danish National Archives  </td>
+   <td>Included Layered Data Model and Documentation requirements  </td>
   </tr>
 <tbody> 
 </table>
