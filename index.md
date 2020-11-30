@@ -592,8 +592,7 @@ There should be documentation in the representations and/or in the information p
 	<tr>
 		<th>ID</th>
 		<th>Name and Location</th>
-		<th>Description and
-Usage</th>
+		<th>Description and Usage</th>
 		<th>Card &amp; Level</th>
 	</tr>
 </thead>
@@ -615,11 +614,11 @@ Usage</th>
 		<td> </td>
 		<td>The (main) system-user dialogues <b>SHOULD</b> be documented, down to the identification of the database coulumns/fields involved in the dialogues, documented as a combination of: 
 		<ul>
-<li><p>Screenshots, annotated with coulumn/field descriptions, stored in the Documentation folder.</p></li>
-<li><p>User documentation describing the system-user dialogue, stored in the Documentation folder.</p></li>
-<li><p>If views are not present, additional descriptions of the system (application) logic, stored in the Documentation folder.</p></li>
-</ul>
-	<td>1..n SHOULD </td>
+		<li><p>Screenshots, annotated with coulumn/field descriptions, stored in the Documentation folder.</p></li>
+		<li><p>User documentation describing the system-user dialogue, stored in the Documentation folder.</p></li>
+		<li><p>If views are not present, additional descriptions of the system (application) logic, stored in the Documentation folder.</p></li>
+		</ul>
+		<td>1..n SHOULD </td>
 	<tr>
 		<td>SIARD_32 </td>
 		<td> </td>
@@ -632,51 +631,40 @@ Usage</th>
 		<td>There <b>MAY</b> be videos or screen dumps from the system as seen from the user&#39;s point of view in the Documentation folder.</td>
 		<td>1..n SHOULD </td>
 	</tr>      
-
 </tbody>
 </table>
 
-
 ## Glossary
+
 
 <table>
 <thead>
-  <tr>
-   <th><strong>Name</strong>
-   </th>
-   <th><strong>Description</strong>
-   </th>
-  </tr>
+  	<tr>
+   		<th><strong>Name</strong> </th>
+   		<th><strong>Description</strong> </th>
+  	</tr>
 </thead>
 <tbody>
-  <tr>
-   <td><strong>Content Information Type (CIT)</strong>
-   </td>
-   <td>A type of a set of information that is the original target of preservation or that includes part or all of that information. It is an Information Object composed of its Content Data Object and its Representation Information.
-   </td>
-  </tr>
-  <tr>
-   <td><strong>DBMS</strong>
-   </td>
-   <td>Database Management System
-   </td>
-  </tr>
-  <tr>
-   <td><strong>OAIS</strong>
-   </td>
-   <td>Open Archival Information System
-   </td>
-  </tr>
-  <tr>
-   <td><strong>RDBMS</strong>
-   </td>
-   <td>Relational Database Management System
-   </td>
-  </tr>
-  <tr>
-   <td><strong>SIARD</strong> </td>
-   <td>Software Independent Archival of Relational Databases </td>
-  </tr>
+  	<tr>
+   		<td><strong>Content Information Type (CIT)</strong> </td>
+   		<td>A type of a set of information that is the original target of preservation or that includes part or all of that information. It is an Information Object composed of its Content Data Object and its Representation Information. </td>
+  	</tr>
+  	<tr>
+  	 	<td><strong>DBMS</strong> </td>
+   		<td>Database Management System </td>
+  	</tr>
+  	<tr>
+  		<td><strong>OAIS</strong> </td>
+   		<td>Open Archival Information System </td>
+  	</tr>
+  	<tr>
+   		<td><strong>RDBMS</strong> </td>
+   		<td>Relational Database Management System </td>
+  	</tr>
+  	<tr>
+   		<td><strong>SIARD</strong> </td>
+   		<td>Software Independent Archival of Relational Databases </td>
+  	</tr>
 </tbody>
 </table> 
 
@@ -684,114 +672,102 @@ Usage</th>
 
 <table>
 <thead>
-  <tr>
-   <th>Name(s) </th>
-   <th>Organisation(s) </th>
-  </tr>
+  	<tr>
+   		<th>Name(s) </th>
+   		<th>Organisation(s) </th>
+  	</tr>
 </thead>
-
 <tbody>
-  <tr>
-   <td>Phillip Aasvang Tømmerholt </td>
-   <td>The Danish National Archives </td>
-  </tr>
-  <tr>
-   <td>Anders Bo Nielsen
-   </td>
-   <td>The Danish National Archives
-   </td>
-  </tr>
-  <tr>
-   <td>Asbjørn Skjødt
-   </td>
-   <td>The Danish National Archives
-   </td>
-  </tr>
-  <tr>
-   <td>Henrik K. R. Jakobsen
-   </td>
-   <td>The Danish National Archives
-   </td>
-  </tr>
-  <tr>
-   <td>Karin Bredenberg
-   </td>
-   <td>Kommunalförbundet Sydarkivera
-   </td>
-  </tr>
-  <tr>
-   <td>Arne-Kristian Groven
-   </td>
-   <td>Norwegian National Archives (Arkivverket)
-   </td>
-  </tr>
+  	<tr>
+   		<td>Phillip Aasvang Tømmerholt </td>
+   		<td>The Danish National Archives </td>
+  	</tr>
+  	<tr>
+   		<td>Anders Bo Nielsen </td>
+   		<td>The Danish National Archives </td>
+  	</tr>
+  	<tr>
+   		<td>Asbjørn Skjødt </td>
+   		<td>The Danish National Archives </td>
+  	</tr>
+  	<tr>
+   		<td>Henrik K. R. Jakobsen </td>
+   		<td>The Danish National Archives </td>
+  	</tr>
+  	<tr>
+  	 	<td>Karin Bredenberg </td>
+   		<td>Kommunalförbundet Sydarkivera </td>
+  	</tr>
+  	<tr>
+   		<td>Arne-Kristian Groven  </td>
+   		<td>Norwegian National Archives (Arkivverket)  </td>
+  	</tr>
 </tbody>
 </table>
 
 ## Revievers
 <table>
 <thead>	
-  <tr>
-   <th>Name(s) </th>
-   <th>Organisation(s) </th>
-  </tr>
+	<tr>
+		<th>Name(s) </th>
+		<th>Organisation(s) </th>
+	</tr>
  </thead> 
  <tbody>
-  <tr>
-   <td>Janet Anderson </td>
-   <td>Highbury/DNA  </td>
-  </tr>
-  <tr>
-   <td>Lauri Ratsep </td>
-   <td>National Archives of Estonia  </td>
-  </tr>
-  <tr>
-   <td>Jaime Kaminski  </td>
-   <td>Highbury/DNA </td>
-  </tr>
-  <tr>
-   <td>Thomas Bolbroe  </td>
-   <td>The Danish National Archives   </td>
-  </tr>
+ 	<tr>
+		<td>Janet Anderson </td>
+   		<td>Highbury/DNA  </td>
+  	</tr>
+  	<tr>
+   		<td>Lauri Ratsep </td>
+   		<td>National Archives of Estonia  </td>
+  	</tr>
+  	<tr>
+   		<td>Jaime Kaminski  </td>
+   		<td>Highbury/DNA </td>
+  	</tr>
+  	<tr>
+   		<td>Thomas Bolbroe  </td>
+   		<td>The Danish National Archives   </td>
+  	</tr>
 </tbody>
 </table>
 
-
-**Submitted Revisions History**
+### Submitted Revisions History
 
 
 <table>
 <thead>
-  <tr>
-   <th><strong>Revision No.</strong> </th>
-   <th><strong>Date</strong> </th>
-   <th><strong>Authors(s)</strong> </th>
-   <th><strong>Organisation</strong> </th>
-   <th><strong>Description</strong></th>
-  </tr>
+	<tr>
+		<th><strong>Revision No.</strong> </th>
+		<th><strong>Date</strong> </th>
+		<th><strong>Authors(s)</strong> </th>
+		<th><strong>Organisation</strong> </th>
+		<th><strong>Description</strong></th>
+	</tr>
 </thead>
 <tbody>  
-  <tr>
-   <td>1.0  </td>
-   <td>14-08-2020 </td>
-   <td>Phillip Aasvang Tømmerholt  </td>
-   <td>Danish National Archives </td>
-   <td>DRAFT version for internal review </td>
-  </tr>
-  <tr>
-   <td>1.1 </td>
-   <td>31-08-2020 </td>
-   <td>Phillip Aasvang Tømmerholt  </td>
-   <td>Danish National Archives  </td>
-   <td>DRAFT version with changes based on internal review </td>
-  </tr>
-  <tr>
-   <td>1.2 </td>
-   <td>29-09-2020 </td>
-   <td>Phillip Aasvang Tømmerholt  </td>
-   <td>Danish National Archives  </td>
-   <td>Included Layered Data Model and Documentation requirements  </td>
-  </tr>
+	<tr>
+   		<td>1.0  </td>
+   		<td>14-08-2020 </td>
+   		<td>Phillip Aasvang Tømmerholt  </td>
+   		<td>Danish National Archives </td>
+   		<td>DRAFT version for internal review </td>
+  	</tr>
+  	<tr>
+   		<td>1.1 </td>
+   		<td>31-08-2020 </td>
+   		<td>Phillip Aasvang Tømmerholt  </td>
+   		<td>Danish National Archives  </td>
+   		<td>DRAFT version with changes based on internal review </td>
+  	</tr>
+  	<tr>
+   		<td>1.2 </td>
+   		<td>29-09-2020 </td>
+   		<td>Phillip Aasvang Tømmerholt  </td>
+   		<td>Danish National Archives  </td>
+   		<td>Included Layered Data Model and Documentation requirements  </td>
+  	</tr>
 <tbody> 
 </table>
 
