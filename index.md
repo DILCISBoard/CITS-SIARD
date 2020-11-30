@@ -267,8 +267,8 @@ and Usage</th>
 	</tr>
 	<tr>
 		<td>SIARD_3 Ref CSIP4 </td>
-		<td>Content Information Type Specification mets/ @csip:CONTENTINFORMATIONTYPE </td>
-		<td>For information packages that primarily contain relational databases the value in Package mets/ @csip:CONTENTINFORMATIONTYPE <b>MUST</b> be &quot;CITS_SIARD&quot; as taken from the CSIP Vocabulary for Content Information Type.</td>
+		<td>Content Information Type Specification mets/@csip:CONTENTINFORMATIONTYPE </td>
+		<td>For information packages that primarily contain relational databases the value in Package mets/@csip:CONTENTINFORMATIONTYPE <b>MUST</b> be &quot;CITS_SIARD&quot; as taken from the CSIP Vocabulary for Content Information Type.</td>
 		<td>1..1 MUST </td>
 	</tr>
 	<tr>
@@ -280,13 +280,13 @@ and Usage</th>
 	<tr>
 		<td>SIARD_5 Ref CSIP6 </td>
 		<td>METS Profile mets/@PROFILE </td>
-		<td>For information packages that primarily contain relational databases the value in the @PROFILE <b>MUST</b> be &quot;https: //SIARD.dilcis.eu/profile/CITS_SIARD.xml&quot;</td>
+		<td>For information packages that primarily contain relational databases the value in the @PROFILE <b>MUST</b> be &quot;https://SIARD.dilcis.eu/profile/CITS_SIARD.xml&quot;</td>
 		<td>1..1 MUST </td>
 	</tr>
 	<tr>
 		<td>SIARD_6 Ref CSIP62 </td>
-		<td>fileSec Representation Content Information Type Specification mets/file Sec/fileGrp[ @USE=&#39;Representations&#39;]/ @csip:CONTENTINFORMATIONTYPE </td>
-		<td>There <b>MUST</b> be a minimum of one mets/file Sec/fileGrp[ @USE=&#39;Representations&#39;]/ @csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; as taken from the CSIP Vocabulary for Content Information Type that direct to the representation METS.xml in the representation containing a relational database.</td>
+		<td>fileSec Representation Content Information Type Specification mets/file Sec/fileGrp[ @USE=&#39;Representations&#39;]/@csip:CONTENTINFORMATIONTYPE </td>
+		<td>There <b>MUST</b> be a minimum of one mets/file Sec/fileGrp[ @USE=&#39;Representations&#39;]/@csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; as taken from the CSIP Vocabulary for Content Information Type that direct to the representation METS.xml in the representation containing a relational database.</td>
 		<td>1..n MUST </td>
 	</tr>
 	<tr>
@@ -298,7 +298,7 @@ and Usage</th>
 	<tr>
 		<td>SIARD_8 Ref C SIP105-CSIP112 </td>
 		<td>StructMap METS pointer </td>
-		<td>For any fileGrp/ @csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; there <b>MUST</b> be a corresponding @div- representation in the StructMap-element</td>
+		<td>For any fileGrp/@csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; there <b>MUST</b> be a corresponding @div-representation in the StructMap-element</td>
 		<td>1..1 MUST </td>
 	</tr>
 </tbody>
@@ -340,14 +340,14 @@ and Usage</th>
 	</tr>
 	<tr>
 		<td>SIARD_10 Ref CSIP4 </td>
-		<td>Content Information Type Specification mets/ @csip:CONTENTINFORMATIONTYPE </td>
-		<td>For representations that primarily contain relational databases and that conforms to CITS SIARD the value in Package mets/ @csip:CONTENTINFORMATIONTYPE <b>MUST</b> be &quot;CITS_SIARD&quot; as taken from the CSIP Vocabulary for [Content Information Type] .</td>
+		<td>Content Information Type Specification mets/@csip:CONTENTINFORMATIONTYPE </td>
+		<td>For representations that primarily contain relational databases and that conforms to CITS SIARD the value in Package mets/@csip:CONTENTINFORMATIONTYPE <b>MUST</b> be &quot;CITS_SIARD&quot; as taken from the CSIP Vocabulary for [Content Information Type] .</td>
 		<td>1..1 MUST </td>
 	</tr>
 	<tr>
 		<td>SIARD_11 Ref CSIP5 </td>
 		<td>Other Content Information Type Specification mets/@csip:OTHERCONTENTINFORMATIONTYPE </td>
-		<td>For representations where mets/ @csip:CONTENTINFORMATIONTYPE has the value &quot;CITS_SIARD&quot; then mets/@csip:OTHERCONTENTINFORMATIONTYPE <b>MUST</b> have a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, Database_dump}</td>
+		<td>For representations where mets/@csip:CONTENTINFORMATIONTYPE has the value &quot;CITS_SIARD&quot; then mets/@csip:OTHERCONTENTINFORMATIONTYPE <b>MUST</b> have a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, Database_dump}</td>
 		<td>0..0 NOT </td>
 	</tr>
 	<tr>
@@ -383,7 +383,7 @@ Usage</th>
 	<tr>
 		<td>SIARD_14</td>
 		<td>Typemets/@TYPE</td>
-		<td>If the value in representation mets/@csip:OTHERCONT ENTINFORMATIONTYPE is {SIARD_1.0, SIARD2.0, SIARD2.1, Database_dump} then the Package METS.xml fileGrp who refers to the Package METS.xml <b>MUST</b> have the same value.</td>
+		<td>If the value in representation mets/@csip:OTHERCONTENTINFORMATIONTYPE is {SIARD_1.0, SIARD2.0, SIARD2.1, Database_dump} then the Package METS.xml fileGrp who refers to the Package METS.xml <b>MUST</b> have the same value.</td>
 		<td>1..1MUST</td>
 	</tr>
 </tbody>
@@ -408,19 +408,19 @@ Usage</th>
 	<tr>
 		<td>SIARD_15 </td>
 		<td> </td>
-		<td>If the value in mets/@csip:OTHERCONT ENTINFORMATIONTYPE is {SIARD_1.0, SIARD2.0, SIARD2.1} then there <b>MUST</b> exist a file named [databaseName].siard in Representations/[RepresentationName]/data</td>
+		<td>If the value in mets/@csip:OTHERCONTENTINFORMATIONTYPE is {SIARD_1.0, SIARD2.0, SIARD2.1} then there <b>MUST</b> exist a file named [databaseName].siard in Representations/[RepresentationName]/data</td>
 		<td>1..1 MUST </td>
 	</tr>
 	<tr>
 		<td>SIARD_16 </td>
 		<td> </td>
-		<td>The SIARD version of the SIARD-file <b>MUST</b> be the same as the version provided in mets/@csip:OTHERCONTENTINFORMATIONTYPE and fileSec/fileGrp/file@csip:OTHERCONT ENTINFORMATIONTYPE</td>
+		<td>The SIARD version of the SIARD-file <b>MUST</b> be the same as the version provided in mets/@csip:OTHERCONTENTINFORMATIONTYPE and fileSec/fileGrp/file@csip:OTHERCONTENTINFORMATIONTYPE</td>
 		<td>MUST </td>
 	</tr>
 	<tr>
 		<td>SIARD_17 </td>
 		<td> </td>
-		<td>The representati ons/[RepresentationName]/data/[databaseName].siard <b>SHOULD</b> be a valid SIARD file</td>
+		<td>The representations/[RepresentationName]/data/[databaseName].siard <b>SHOULD</b> be a valid SIARD file</td>
 		<td>SHOULD </td>
 	</tr>
 	<tr>
