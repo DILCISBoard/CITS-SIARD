@@ -273,14 +273,14 @@ and Usage</th>
 	</tr>
 	<tr>
 		<td>SIARD_4 Ref CSIP5 </td>
-		<td>Other Content Information Type Specification mets/@csip :OTHERCONTENTINFORMATIONTYPE </td>
-		<td>For information packages that primarily contain relational databases the Package METS must <b>NOT</b> have a mets/@csip :OTHERCONTENTINFORMATIONTYPE</td>
+		<td>Other Content Information Type Specification mets/@csip:OTHERCONTENTINFORMATIONTYPE </td>
+		<td>For information packages that primarily contain relational databases the Package METS must <b>NOT</b> have a mets/@csip:OTHERCONTENTINFORMATIONTYPE</td>
 		<td>0..0 NOT </td>
 	</tr>
 	<tr>
 		<td>SIARD_5 Ref CSIP6 </td>
 		<td>METS Profile mets/@PROFILE </td>
-		<td>For information packages that primarily contain relational databases the value in the @PROFILE <b>MUST</b> be &quot;https: //SIARD.dilcis .eu/profile/CI TS_SIARD.xml&quot;</td>
+		<td>For information packages that primarily contain relational databases the value in the @PROFILE <b>MUST</b> be &quot;https: //SIARD.dilcis.eu/profile/CITS_SIARD.xml&quot;</td>
 		<td>1..1 MUST </td>
 	</tr>
 	<tr>
@@ -291,8 +291,8 @@ and Usage</th>
 	</tr>
 	<tr>
 		<td>SIARD_7 Ref CSIP63 </td>
-		<td>fileSec Other Content Information Type Specification mets/fileSec/fileGrp[@cs ip:CONTENTINFORMATIONTYPE=&#39; CITS_SIARD &#39;]/@csip :OTHERCONTENTINFORMATIONTYPE </td>
-		<td>For any mets/file Sec/fileGrp[ @csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; there <b>MUST</b> be a @csip :OTHERCONTENTINFORMATIONTYPE attribute with a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, D atabase_dump}.</td>
+		<td>fileSec Other Content Information Type Specification mets/fileSec/fileGrp[@cs ip:CONTENTINFORMATIONTYPE=&#39; CITS_SIARD &#39;]/@csip:OTHERCONTENTINFORMATIONTYPE </td>
+		<td>For any mets/file Sec/fileGrp[ @csip:CONTENTINFORMATIONTYPE with the value &quot;CITS_SIARD&quot; there <b>MUST</b> be a @csip:OTHERCONTENTINFORMATIONTYPE attribute with a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, D atabase_dump}.</td>
 		<td>1..1 MUST </td>
 	</tr>
 	<tr>
@@ -346,8 +346,8 @@ and Usage</th>
 	</tr>
 	<tr>
 		<td>SIARD_11 Ref CSIP5 </td>
-		<td>Other Content Information Type Specification mets/@csip :OTHERCONTENTINFORMATIONTYPE </td>
-		<td>For representations where mets/ @csip:CONTENTINFORMATIONTYPE has the value &quot;CITS_SIARD&quot; then mets/@csip :OTHERCONTENTINFORMATIONTYPE <b>MUST</b> have a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, Database_dump}</td>
+		<td>Other Content Information Type Specification mets/@csip:OTHERCONTENTINFORMATIONTYPE </td>
+		<td>For representations where mets/ @csip:CONTENTINFORMATIONTYPE has the value &quot;CITS_SIARD&quot; then mets/@csip:OTHERCONTENTINFORMATIONTYPE <b>MUST</b> have a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, Database_dump}</td>
 		<td>0..0 NOT </td>
 	</tr>
 	<tr>
@@ -358,8 +358,8 @@ and Usage</th>
 	</tr>
 	<tr>
 		<td>SIARD_13 Ref CSIP64-CSIP79 </td>
-		<td>File Pointer fileSec/file Grp/file@csip :OTHERCONTENTINFORMATIONTYPE </td>
-		<td>If the value in mets/@csip :OTHERCONTENTINFORMATIONTYPE is {SIARD_1.0, SIARD2.0, SIARD2.1, Database_dump} then there <b>MUST</b> exist one and only one file in the fileGrp with @USE = &quot;data&quot; with an identical value in fileSec/file Grp/file@csip :OTHERCONTENTINFORMATIONTYPE that is used to locate the relevant database file.</td>
+		<td>File Pointer fileSec/file Grp/file@csip:OTHERCONTENTINFORMATIONTYPE </td>
+		<td>If the value in mets/@csip:OTHERCONTENTINFORMATIONTYPE is {SIARD_1.0, SIARD2.0, SIARD2.1, Database_dump} then there <b>MUST</b> exist one and only one file in the fileGrp with @USE = &quot;data&quot; with an identical value in fileSec/file Grp/file@csip:OTHERCONTENTINFORMATIONTYPE that is used to locate the relevant database file.</td>
 		<td>1..1 MUST </td>
 	</tr>
 </tbody>
