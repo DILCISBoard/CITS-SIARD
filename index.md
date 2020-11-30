@@ -524,8 +524,7 @@ There should be a submission agreement in the SIP representation that has been t
 	<tr>
 		<th>ID</th>
 		<th>Name and Location</th>
-		<th>Description and
-Usage</th>
+		<th>Description and Usage</th>
 		<th>Card &amp; Level</th>
 	</tr>
 </thead>
@@ -634,6 +633,8 @@ Usage</th>
 		<td>1..n SHOULD </td>
 	</tr>      
 
+</tbody>
+</table>
 
 
 ## Glossary
@@ -673,37 +674,26 @@ Usage</th>
    </td>
   </tr>
   <tr>
-   <td><strong>SIARD</strong>
-   </td>
-   <td>Software Independent Archival of Relational Databases
-   </td>
+   <td><strong>SIARD</strong> </td>
+   <td>Software Independent Archival of Relational Databases </td>
   </tr>
+</tbody>
+</table> 
 
-
- 
-
-## Postface
-
+## Authors
 
 <table>
 <thead>
   <tr>
-   <td colspan="2" ><strong>AUTHOR(S)</strong>
-   </td>
+   <td>Name(s) </td>
+   <td>Organisation(s) </td>
   </tr>
-  <tr>
-   <td>Name(s)
-   </td>
-   <td>Organisation(s)
-   </td>
-  </tr>
-  </thead>
+</thead>
+
 <tbody>
   <tr>
-   <td>Phillip Aasvang Tømmerholt
-   </td>
-   <td>The Danish National Archives
-   </td>
+   <td>Phillip Aasvang Tømmerholt </td>
+   <td>The Danish National Archives </td>
   </tr>
   <tr>
    <td>Anders Bo Nielsen
@@ -735,19 +725,21 @@ Usage</th>
    <td>Norwegian National Archives (Akrivverket)
    </td>
   </tr>
+</tbody>
+</table>
 
-
+## Revievers
 <table>
-  <tr>
-   <td colspan="2" ><strong>REVIEWER(S)</strong>
-   </td>
-  </tr>
+<thead>	
+ 
   <tr>
    <td>Name(s)
    </td>
    <td>Organisation(s)
    </td>
   </tr>
+ </thead> 
+ <tbody>
   <tr>
    <td>Janet Anderson
    </td>
@@ -774,7 +766,9 @@ Usage</th>
   </tr>
    </td>
   </tr>
+</tbody>
 </table>
+
 
 <table>
   <tr>
