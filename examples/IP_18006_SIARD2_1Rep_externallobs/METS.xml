@@ -7,8 +7,8 @@
   xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance schemas/XMLSchema.xsd http://www.loc.gov/METS/ schemas/mets.xsd 
     http://www.w3.org/1999/xlink schemas/xlink.xsd 
     https://DILCIS.eu/XML/METS/CSIPExtensionMETS schemas/CSIPExtensionMETS.xsd" 
-  OBJID="IP_18006_SIARD2_1Rep_externallobs" TYPE="Databases" csip:CONTENTINFORMATIONTYPE="SIARD2" 
-  PROFILE="http://www.eark-project.com/METS/IP.xml" csip:OAISPACKAGETYPE="AIP">
+  OBJID="IP_18006_SIARD2_1Rep_externallobs" TYPE="Databases" csip:CONTENTINFORMATIONTYPE="CITS_SIARD" 
+  PROFILE="https://SIARD.dilcis.eu/profile/CITS_SIARD.xml" csip:OAISPACKAGETYPE="SIP">
   <!-- CSIP1 - mets/@OBJID -->
   <!-- CSIP2 - mets/@TYPE -->
   <!-- CSIP4 - mets/@csip:CONTENTTYPESPECIFICATION -->
