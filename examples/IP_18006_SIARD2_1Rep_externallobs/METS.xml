@@ -117,7 +117,7 @@
 
     <!-- CSIP82 mets/structMap/@LABEL The value must be “CSIP StructMap” -->
     <!-- CSIP83 mets/structMap/@ID -->
-    <div ID="Structmap_Div_ID" LABEL="IP_18006_1REP">
+    <div ID="Structmap_Div_ID" LABEL="IP_18006_SIARD2_1Rep_externallobs">
       <!-- CSIP84 mets/structMap/div -->
       <!-- CSIP85 mets/structMap/div/@ID -->
       <!-- CSIP86 mets/structMap/div/@LABEL - The main division (div) element in the package uses the package ID as the value for the attribute LABEL.-->
