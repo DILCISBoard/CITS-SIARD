@@ -121,7 +121,7 @@
       <!-- CSIP84 mets/structMap/div -->
       <!-- CSIP85 mets/structMap/div/@ID -->
       <!-- CSIP86 mets/structMap/div/@LABEL - The main division (div) element in the package uses the package ID as the value for the attribute LABEL.-->
-      <div ID="Structmap_Div_ID_Metadata" LABEL="Metadata"/>
+      <div ID="Structmap_Div_ID_Metadata" LABEL="Metadata" ADMID="uuid-48C18DD8-2561-4315-AC39-F941CBB138B4" DMDID="uuid-4wqd8DD8-2561-4315-AC39-F941CBB138B4"/>
       <div ID="Structmap_Div_ID_Documentation" LABEL="Documentation"/>
       <div ID="Structmap_Div_ID_Representations" LABEL="Representations"/>
       <div ID="struct-map-reps-sub-div" LABEL="Representations/rep1">
