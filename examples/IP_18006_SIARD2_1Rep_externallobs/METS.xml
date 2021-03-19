@@ -7,7 +7,7 @@
   xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance schemas/XMLSchema.xsd http://www.loc.gov/METS/ schemas/mets.xsd 
     http://www.w3.org/1999/xlink schemas/xlink.xsd 
     https://DILCIS.eu/XML/METS/CSIPExtensionMETS schemas/CSIPExtensionMETS.xsd" 
-  OBJID="IP_18006_SIARD2_1Rep_externallobs" TYPE="Databases" csip:CONTENTINFORMATIONTYPE="CITS_SIARD" 
+    OBJID="IP_18006_SIARD2_1Rep_externallobs" TYPE="Databases" csip:CONTENTINFORMATIONTYPE="CITS_SIARD" 
   PROFILE="https://SIARD.dilcis.eu/profile/CITS_SIARD.xml" csip:OAISPACKAGETYPE="SIP">
   <!-- CSIP1 - mets/@OBJID -->
   <!-- CSIP2 - mets/@TYPE -->
@@ -88,7 +88,7 @@
       </file>
     </fileGrp>
     <!-- documentation -->		
-    <fileGrp USE="Documentation" ID="ID.AVID_documentation">  <!-- this ID is just for internal reference -->
+    <fileGrp USE="Documentation" ID="ID.AVID_documentation">  <!-- this ID is referred to in the structMap see CSIP116 -->
 
       <!-- Submission decision-->
       <file ID="submission_decision" USE="documentation" MIMETYPE="TIFF"  CREATED="2015-12-14T14:20:00" 
@@ -117,18 +117,24 @@
 
     <!-- CSIP82 mets/structMap/@LABEL The value must be “CSIP StructMap” -->
     <!-- CSIP83 mets/structMap/@ID -->
-    <div ID="Structmap_Div_ID" LABEL="IP_18006_1REP">
+    <div ID="Structmap_Div_ID" LABEL="IP_18006_SIARD2_1Rep_externallobs">
       <!-- CSIP84 mets/structMap/div -->
       <!-- CSIP85 mets/structMap/div/@ID -->
       <!-- CSIP86 mets/structMap/div/@LABEL - The main division (div) element in the package uses the package ID as the value for the attribute LABEL.-->
-      <div ID="Structmap_Div_ID_Metadata" LABEL="Metadata"/>
-      <div ID="Structmap_Div_ID_Documentation" LABEL="Documentation"/>
-      <div ID="Structmap_Div_ID_Representations" LABEL="Representations"/>
-      <div ID="struct-map-reps-sub-div" LABEL="Representations/rep1">
-        <mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/rep1/METS.xml" xlink:title="ID_Rep1" ></mptr>
-        </div>  
+      <div ID="Structmap_Div_ID_Metadata" LABEL="Metadata" ADMID="uuid-48C18DD8-2561-4315-AC39-F941CBB138B4" DMDID="uuid-4wqd8DD8-2561-4315-AC39-F941CBB138B4"></div>
+      <div ID="Structmap_Div_ID_Documentation" LABEL="Documentation">
+        <fptr FILEID="ID.AVID_documentation"/> 
+      </div>
+      <div ID="Structmap_Div_ID_Schemas" LABEL="Schemas">
+        <fptr FILEID="ID_schemas"/> 
+      </div>
 
-      <div ID="Structmap_Div_ID_Schemas" LABEL="Schemas" CONTENTIDS="ID_schemas"/>
+      <div ID="Structmap_Div_ID_Representations" LABEL="Representations">
+        <div ID="struct-map-reps-sub-div" LABEL="Representations/rep1">
+          <mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/rep1/METS.xml" xlink:title="ID_Rep1" ></mptr>
+        </div>  
+      </div>
+     
     </div>
   </structMap>
 </mets>
