@@ -47,7 +47,21 @@
   </amdSec>
   
 
-  <fileSec ID="ID_filesec">  <!-- CSIP59 -->
+  <fileSec ID="ID_filesec">  <!-- CSIP58, CSIP59 -->
+    
+    <!-- documentation -->		
+    <fileGrp USE="Documentation" ID="ID.AVID_documentation">  <!-- CSIP60, CSIP64, CSIP65 -->
+      
+      <!-- Submission decision-->
+      <file ID="submission_decision" MIMETYPE="TIFF" SIZE="86453"  CREATED="2015-12-14T14:20:00" CHECKSUM="005a46043be036835027b474dba863b5" CHECKSUMTYPE="MD5" OWNERID="RIGSARKIVET" > <!-- CSIP66, CSIP67, CSIP68, CSIP69, CSIP70, CSIP71, CSIP72, CSIP73 -->
+        <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="documentation\submission_decision.tif" /> <!-- CSIP76, CSIP77, CSIP78, CSIP79 -->
+      </file>	
+      
+      <!-- ER diagramme -->
+      <file ID="IP_er_diagramme" MIMETYPE="PNG"  SIZE="86453" CREATED="2015-12-14T14:20:00" CHECKSUM="005a46043be036835027b474dba863b5" CHECKSUMTYPE="MD5" > <!-- CSIP66, CSIP67, CSIP68, CSIP69, CSIP70, CSIP71, CSIP72, CSIP73 -->
+        <FLocat LOCTYPE="URL" xlink:href="documentation\Northwind ER diagram.png" xlink:type="simple"/> <!-- CSIP76, CSIP77, CSIP78, CSIP79 -->
+      </file>	
+    </fileGrp>			
     
     <!-- schemas -->
     <fileGrp USE="Schemas" ID="ID_schemas">
@@ -57,19 +71,8 @@
      
       <!-- METS.xsd -->
       <file ID="ID_mets_xsd" MIMETYPE="application/xml" SIZE="133920" CREATED="2018-05-01T14:20:00"
-        CHECKSUM="4e9961dec3de72081e6142b28a437fb8" CHECKSUMTYPE="MD5">
-        <!-- CSIP66 there MUST be a file-element -->
-        <!-- CSIP67 there MUST be an ID-attribute -->
-        <!-- CSIP68 there MUST be an MIMETYPE-attribute -->
-        <!-- CSIP69 there MUST be an SIZE-attribute -->
-        <!-- CSIP70 there MUST be an CREATED-attribute -->
-        <!-- CSIP71 there MUST be an CHECKSUM-attribute -->
-        <!-- CSIP72 there MUST be an CHECKSUMTYPE-attribute -->
-        <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="schemas/mets.xsd"/>
-        <!-- CSIP76 there MUST be a FLocat-element -->
-        <!-- CSIP77 there MUST be a LOCTYPE-attribute -->
-        <!-- CSIP78 there MUST be a xlink:type-attribute with the value "simple" -->
-        <!-- CSIP79 there MUST be a xlink:href-attribute -->
+        CHECKSUM="4e9961dec3de72081e6142b28a437fb8" CHECKSUMTYPE="MD5">  <!-- CSIP66, CSIP67, CSIP68, CSIP69, CSIP70, CSIP71, CSIP72 -->
+        <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="schemas/mets.xsd"/> <!-- CSIP76, CSIP77, CSIP78, CSIP79  -->
       </file>
       <!-- XMLSchema.xsd -->
       <file ID="ID_XMLSchema_xsd" MIMETYPE="application/xml" CREATED="2015-12-14T14:20:00"
@@ -87,21 +90,7 @@
         <FLocat LOCTYPE="URL" xlink:href="schemas/CSIPExtensionMETS.xsd" xlink:type="simple"/>
       </file>
     </fileGrp>
-    <!-- documentation -->		
-    <fileGrp USE="Documentation" ID="ID.AVID_documentation">  <!-- this ID is referred to in the structMap see CSIP116 -->
-
-      <!-- Submission decision-->
-      <file ID="submission_decision" USE="documentation" MIMETYPE="TIFF"  CREATED="2015-12-14T14:20:00" 
-        CHECKSUM="005a46043be036835027b474dba863b5" CHECKSUMTYPE="MD5" SIZE="86453">
-        <FLocat LOCTYPE="URL" xlink:href="documentation\submission_decision.tif" xlink:type="simple"/>
-      </file>	
-
-      <!-- ER diagramme -->
-      <file ID="IP_er_diagramme" USE="documentation" MIMETYPE="PNG"  CREATED="2015-12-14T14:20:00" 
-        CHECKSUM="005a46043be036835027b474dba863b5" CHECKSUMTYPE="MD5" SIZE="86453">
-        <FLocat LOCTYPE="URL" xlink:href="documentation\Northwind ER diagram.png" xlink:type="simple"/>
-      </file>	
-    </fileGrp>			
+    
 
     <fileGrp USE="Representations" csip:OAISPACKAGETYPE="SIP" csip:CONTENTINFORMATIONTYPE="SIARD2" csip:OTHERCONTENTTYPESPECIFICATION="SIARD_2.1" ID="ID_Rep1">
 
@@ -114,7 +103,6 @@
   
   
   <structMap TYPE="PHYSICAL" LABEL="CSIP" ID="StructmapID_rep1"> <!-- CSIP80, CSIP81, CSIP82, CSIP83  -->
-   
     <div ID="Structmap_Div_ID" LABEL="IP_18006_SIARD2_1Rep_externallobs">  <!-- CSIP84, CSIP85, CSIP86 --> 
       
       <div ID="Structmap_Div_ID_Metadata_" LABEL="Metadata" ADMID="uuid-48C18DD8-2561-4315-AC39-F941CBB13877" DMDID="uuid-4wqd8DD8-2561-4315-AC39-F941CBB138B4"></div> <!-- CSIP88, CSIP89, CSIP90, CSIP91, CSIP92 --> 
