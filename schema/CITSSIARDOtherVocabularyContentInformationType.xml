@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="DILCISVocabularies.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<Vocabularies xmlns="https://DILCIS.eu/XML/Vocabularies/IP">
+    <Vocabulary Name="VocabularyCITSSIARDOtherContentInformationTypeSpecification">
+        <Information>
+            <p>Vocabulary derived from E-ARK which exstends the Content information type specification vocabulary found at http://earkcsip.dilcis.eu/schema/CSIPVocabularyContentInformationType.xml</p>
+        </Information>
+        <Entry>
+            <Term lang="en">SIARD_1.0</Term>
+            <Definition>A relational database is described with SIARD version 1</Definition>
+        </Entry>
+        <Entry>
+            <Term lang="en">SIARD_2.0</Term>
+            <Definition>A relational database is described with SIARD version 2</Definition>
+        </Entry>
+        <Entry>
+            <Term lang="eb">SIARD_2.1</Term>
+            <Definition>A relational database is described with SIARD version 2.1</Definition>
+        </Entry>
+        <Entry>
+            <Term lang="eb">SIARD_2.2</Term>
+            <Definition>A relational database is described with SIARD version 2.2</Definition>
+        </Entry>
+        <Entry>
+            <Term lang="en">Database_dump</Term>
+            <Definition>A database dump is provided</Definition>
+        </Entry>
+    </Vocabulary>
+</Vocabularies>
