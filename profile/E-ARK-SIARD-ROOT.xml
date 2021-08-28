@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 2021-08-31 Publication of E-ARK SIARD METS Profile 1.0  -->
+<!-- 2020-10-15 Draft of E-ARK SIARD METS Profile 1.0 -->
+<METS_Profile
+    xmlns="http://www.loc.gov/METS_Profile/v2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mets="http://www.loc.gov/METS/"
+    xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS"
+    xmlns:sip="https://DILCIS.eu/XML/METS/SIPExtensionMETS"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xsi:schemaLocation="http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-1.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.w3.org/1999/xlink http://www.loc.gov/standards/mets/xlink.xsd"
+    STATUS="provisional"
+    REGISTRATION="unregistered"
+    ID="CITSSIARDROOTV1.0.0">
+    <URI LOCTYPE="URL" ASSIGNEDBY="local">https://citssiard.dilcis.eu/profile/E-ARK-SIARD-ROOT.xml</URI>
+    <title>E-ARK SITS SIARD root METS Profile 1.0 (citssiard_v1_0)</title>
+    <abstract>This is the profile for an root METS following the Specification for the E-ARK Content Information Type Specification for Relational Databases using SIARD (CITS SIARD). Its an extension of the E-ARK SIP profile which in its turn extends the CSIP and SIP profile.</abstract>
+    <date>2021-08-31T12:00:00</date>
+    <contact>
+        <institution>DILCIS Board</institution>
+        <address>http://dilcis.eu/</address>
+        <email>info@dilcis.eu</email>
+    </contact>
+    <related_profile RELATIONSHIP="Extends" URI="https://earksip.dilcis.eu/profile/E-ARK-SIP.xml">E-ARK SIP METS Profile 2.0.4</related_profile>
+    <profile_context>
+        <resource_model>
+          <head>E-ARK CITS SIARD ROOT profile</head>
+            <p xmlns="http://www.w3.org/1999/xhtml">This profile together with the E-ARK CITS SIARD document describes the root METS document for an IP conforming to the E-ARK CITS SIARD.</p>
+        </resource_model>
+    </profile_context>
+    <external_schema>
+        <name>E-ARK SIP METS Extension</name>
+            <URL>https://earksip.dilcis.eu/schema/DILCISExtensionSIPMETS.xsd</URL>
+            <context>XML-schema for the attributes added by SIP</context>
+            <note>
+                <p xmlns="http://www.w3.org/1999/xhtml">An extension schema with the added attributes for use in this profile.</p>
+                <p xmlns="http://www.w3.org/1999/xhtml">The schema is used with a namespace prefix of sip.</p>
+            </note>
+    </external_schema>
+    <external_schema>
+        <name>E-ARK CSIP METS Extension</name>
+        <URL>http://earkcsip.dilcis.eu/schema/DILCISExtensionMETS.xsd</URL>
+        <context>XML-schema for the attributes added by CSIP</context>
+        <note>
+            <p xmlns="http://www.w3.org/1999/xhtml">An extension schema with the added attributes for use in this profile.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml">The schema is identified using the namespace prefix csip.</p>
+        </note>
+    </external_schema>
+    <description_rules>
+        <p xmlns="http://www.w3.org/1999/xhtml">The filepath must be decoded consistently throughout all file references within the information package.</p>
+    </description_rules>
+    <controlled_vocabularies>
+        <vocabulary ID="VocabularyaltrecordIDTYPE">
+            <name>Alternative record ID's</name>
+            <maintenance_agency>DILCIS Board</maintenance_agency>
+            <URI>http://earksip.dilcis.eu/schema/SIPVocabularyRecordIDType.xml</URI>
+            <context>Used in `altrecordID/@TYPE`</context>
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">Describes the type of the alternative record ID.</p>
+            </description>
+        </vocabulary>
+        <vocabulary ID="VocabularyNoteType">
+            <name>Note type</name>
+            <maintenance_agency>DILCIS Board</maintenance_agency>
+            <URI>http://earkcsip.dilcis.eu/schema/CSIPVocabularyNoteType.xml</URI>
+            <context>Used in `@csip:NOTETYPE`</context>
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">Describes the type of a note for an agent.</p>
+            </description>
+        </vocabulary>
+        <vocabulary ID="VocabularyContentInformationTypeSpecification">
+            <name>Content information type specification</name>
+            <maintenance_agency>DILCIS Board</maintenance_agency>
+            <URI>http://earkcsip.dilcis.eu/schema/CSIPVocabularyContentInformationType.xml</URI>
+            <context>Values for `@csip:CONTENTINFORMATIONTYPE`</context>
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">Lists the names of specific E-ARK content information type specifications supported or maintained in this METS profile.</p>
+            </description>
+        </vocabulary>
+        <vocabulary ID="VocabularyCITSSIARDOtherContentInformationTypeSpecification">
+            <!-- Observe the name and path -->
+            <!-- Observe that these value needs to be added in the extendinng attributes schema's value list for the OTHERCONTETNINFORMATIONTYPE attribute -->
+            <name>CITS SIARD Other content information type specification for file groups</name>
+            <maintenance_agency>DILCIS Board</maintenance_agency>
+            <URI>http://citssiard.dilcis.eu/schema/CITSSIARDOtherVocabularyContentInformationType.xml</URI>
+            <context>Values for `@csip:OTHERCONTENTINFORMATIONTYPE`</context>
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">Lists the names of specific E-ARK CITS SIARD other content information type specifications for the file groups supported or maintained in this METS profile.</p>
+            </description>
+        </vocabulary>
+        <vocabulary ID="VocabularyContentCategory">
+            <name>Content Category</name>
+            <maintenance_agency>DILCIS Board</maintenance_agency>
+            <URI>http://earkcsip.dilcis.eu/schema/CSIPVocabularyContentCategory.xml</URI>
+            <context>Values for `mets/@type`</context>
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">Declares the categorical classification of package content.</p>
+            </description>
+        </vocabulary>
+        <vocabulary ID="VocabularyFileGrpAndStructMapDivisionLabel">
+            <name>File group names</name>
+            <maintenance_agency>DILCIS Board</maintenance_agency>
+            <URI>http://earkcsip.dilcis.eu/schema/CSIPVocabularyFileGrpAndStructMapDivisionLabel.xml</URI>
+            <context>Values for `fileGrp/@USE`</context>
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">Describes the uses of the file group `&lt;fileGrp&gt;` that are supported by the profile.</p>
+                <p xmlns="http://www.w3.org/1999/xhtml">Own names should be placed in an own extending vocabulary.</p>
+            </description>
+        </vocabulary>
+        <vocabulary ID="VocabularyISO639-2">
+            <name>ISO language codes</name>
+            <maintenance_agency>International Standard Organization</maintenance_agency>
+            <URI>http://www.iso.ch/</URI>
+            <context>Languages codes used in documetns using the Simple DC XML Schema</context>
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">All information recorded within the portion of a conforming METS document defined using the Simple DC XML Schema must be employ ISO 639-2 language codes within the 'language' element.</p>
+            </description>
+        </vocabulary>
+        <vocabulary ID="VocabularyStatus">
+            <name>dmdSec status</name>
+            <maintenance_agency>DILCIS Board</maintenance_agency>
+            <URI>http://earkcsip.dilcis.eu/schema/CSIPVocabularyStatus.xml</URI>
+            <context>Values for `dmdSec/@STATUS`</context>
+            <description>
+                <p xmlns="http://www.w3.org/1999/xhtml">Describes the status of the descriptive metadata section (dmdSec) which is supported by the profile.</p>
+            </description>
+        </vocabulary>
+    </controlled_vocabularies>
+    <structural_requirements>
+        <metsRootElement ID="metsRootElement">
+            <requirement ID="SIARD_5" REQLEVEL="MUST" EXAMPLES="metsRootElementExample1">
+                <description>
+                    <head>METS Profile</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The value is set to "https://citssiard.dilcis.eu/profile/E-ARK-SIARD-ROOT.xml".</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>METS XPath</dt><dd>mets/@PROFILE</dd>
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP6</dd>
+                        <dt>REF:SIPv2.0.4</dt><dd>https://earksip.dilcis.eu/#SIP2</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_2" REQLEVEL="MUST" RELATEDMAT="VocabularyContentCategory" EXAMPLES="metsRootElementExample1">
+                <description>
+                    <head>Content Category</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The `mets/@TYPE` attribute is set to the value "Databases".</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>METS XPath</dt><dd>mets/@TYPE</dd>
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP2</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_3" REQLEVEL="MUST" RELATEDMAT="VocabularyContentInformationTypeSpecification" EXAMPLES="metsRootElementExample1">
+                <description>
+                    <head>Content Information Type Specification</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The `mets/@csip:CONTENTINFORMATIONTYPE` attribute is set to the value "citssiard_v1_0".</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>METS XPath</dt><dd>mets/@csip:CONTENTINFORMATIONTYPE</dd>
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP4</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_4" REQLEVEL="MUST NOT">
+                <description>
+                    <head>Content Information Type Specification</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The `mets/@csip:OTHERCONTENTINFORMATIONTYPE` attribute is not to be used.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>METS XPath</dt><dd>mets/@csip:OTHERCONTENTINFORMATIONTYPE</dd>
+                        <dt>Cardinality</dt><dd>0..0</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP5</dd>
+                    </dl>
+                </description>
+            </requirement>
+        </metsRootElement>
+        <metsHdr ID="metsHeaderElement">
+            <requirement ID="REF_CSIP_1" REQLEVEL="MUST">
+                <description>
+                    <head>METS header</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The CITS SIARD root METS document metsHdr element should comply with <a href="https://earkcsip.dilcis.eu/#useofthemetsheaderelementmetshdr"> metsHdr requirements in the CSIP profile.</a></p>
+                </description>
+            </requirement>
+            <requirement ID="REF_SIP_1" REQLEVEL="MUST">
+                <description>
+                    <head>METS header</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The CITS SIARD root METS document metsHdr element should comply with <a href="https://earksip.dilcis.eu/#extendeduseofthemetsheaderelement%60metshdr%60"> metsHdr requirements in the SIP profile.</a></p>
+                </description>
+            </requirement>
+        </metsHdr>
+        <dmdSec ID="dmdSecElement">
+            <requirement ID="REF_CSIP_2" REQLEVEL="SHOULD">
+                <description>
+                    <head>Descriptive metadata</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The CITS SIARD root METS document dmdSecr element should comply with <a href="https://earkcsip.dilcis.eu/#useofthemetsdescriptivemetadatasectionelementdmdsec"> dmdSec requirements in the CSIP profile.</a></p>
+                </description>
+            </requirement>
+            <requirement ID="REF_SIP_2" REQLEVEL="SHOULD">
+                <description>
+                    <head>Descriptive metadata</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The CITS SIARD root METS document dmdSec element should comply with <a href="https://earksip.dilcis.eu/#extendeduseofthemetsdescriptivemetadatasectionelement%60dmdsec%60"> dmdSec requirements in the SIP profile.</a></p>
+                </description>
+            </requirement>
+        </dmdSec>
+        <amdSec ID="amdSecElement">
+          <requirement ID="REF_CSIP_3" REQLEVEL="SHOULD">
+              <description>
+                  <head>Administrative metadata</head>
+                  <p xmlns="http://www.w3.org/1999/xhtml">The CITS SIARD root METS document amdSec element should comply with <a href="http://earkcsip.dilcis.eu/#534-use-of-the-mets-administrative-metadata-section-element-amdsec"> amdSec requirements in the CSIP profile.</a></p>
+                  <p xmlns="http://www.w3.org/1999/xhtml">In CITS SIARD it is required that any rights or digital provenance metadata that is general to the package can be held within the root metadata folder and that any rights or digital provenance metadata that is specific to the data held in the representation should be held in the representation metadata folder.</p>
+              </description>
+          </requirement>
+            <requirement ID="REF_SIP_3" REQLEVEL="SHOULD">
+                <description>
+                    <head>Administrative metadata</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The CITS SIARD root METS document amdSec element should comply with <a href="https://earksip.dilcis.eu/#extendeduseofmetsadministrativemetadatasectionelement%60amdsec%60"> amdSec requirements in the CSIP profile.</a></p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">In CITS SIARD it is required that any rights or digital provenance metadata that is general to the package can be held within the root metadata folder and that any rights or digital provenance metadata that is specific to the data held in the representation should be held in the representation metadata folder.</p>
+                </description>
+            </requirement>
+        </amdSec>
+        <fileSec ID="fileSecElement">
+            <requirement ID="SIARD_6" REQLEVEL="MUST" RELATEDMAT="VocabularyContentInformationTypeSpecification" EXAMPLES="fileSecExample1">
+                <description>
+                    <head>fileSec Representation Content Information Type Specification</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">There MUST be a minimum of one mets/fileSec/fileGrp[@USE='Representations']/@csip:CONTENTINFORMATIONTYPE with the value “citssiard_v1_0” as taken from the CSIP Vocabulary for Detailed Content Type that direct to the representation METS.xml in the representation folder containing a renational database.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The value of the attribute `mets/fileSec/fileGrp/@csip:CONTENTINFORMATIONTYPE` is set to "citssiard_v1_0".</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>METS XPath</dt><dd>mets/fileSec/fileGrp[@USE='Representations']/@csip:CONTENTINFORMATIONTYPE</dd>
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP62</dd>
+                    </dl>
+                </description>
+            </requirement> 
+            <requirement ID="SIARD_7" REQLEVEL="MUST" RELATEDMAT="VocabularyCITSSIARDOtherContentInformationTypeSpecification" EXAMPLES="fileSecExample1">
+                <description>
+                    <head>fileSec Other Content Information Type Specification</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">For any mets/fileSec/fileGrp[@csip:CONTENTINFORMATIONTYPE  with the value “citssiard_v1_0” there MUST be a @csip:OTHERCONTENTINFORMATIONTYPE attribute with a value taken from the vocabulary {SIARD_1.0; SIARD_2.0, SIARD_2.1, SIARD_2.2 Database_dump}.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>METS XPath</dt><dd>mets/fileSec/fileGrp[@csip:CONTENTINFORMATIONTYPE='citssiard_v1_0']/@csip:OTHERCONTENTINFORMATIONTYPE</dd>
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP63</dd>
+                    </dl>
+                </description>
+            </requirement>
+        </fileSec>
+        <structMap ID="structMapElement">
+           <requirement ID="SIARD_8" REQLEVEL="MUST" EXAMPLES="structMapExample1">
+               <description>
+                    <head>Representation division</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">There must be a discrete representation `div` element for each representation.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>METS XPath</dt><dd>mets/structMap[@LABEL='CSIP']/div/div</dd>
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP105</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP106</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP107</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP108</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP109</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP110</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP111</dd>
+                        <dt>REF:CSIPv2.0.4</dt><dd>https://earkcsip.dilcis.eu/#CSIP112</dd>
+                     </dl>
+                </description>
+            </requirement>
+         </structMap>
+         <structLink ID="structLinkElement">
+           <requirement REQLEVEL="MAY" ID="REF_METS_1">
+               <description>
+                   <head>structLink</head>
+                   <p xmlns="http://www.w3.org/1999/xhtml">Section not defined or used in CSIP, additional own uses may occur.</p>
+                   <p xmlns="http://www.w3.org/1999/xhtml">Information regarding the structural links is found in the <a href="http://www.loc.gov/standards/mets/METSPrimer.pdf">METS Primer</a></p>
+               </description>
+           </requirement>
+         </structLink>
+        <behaviorSec ID="behaviorSecElement">
+          <requirement REQLEVEL="MAY" ID="REF_METS_2">
+              <description>
+                  <head>behaviorSec</head>
+                  <p xmlns="http://www.w3.org/1999/xhtml">Section not defined or used in CSIP, additional own uses may occur.</p>
+                  <p xmlns="http://www.w3.org/1999/xhtml">Information regarding the behavior section is found in the <a href="http://www.loc.gov/standards/mets/METSPrimer.pdf">METS Primer</a></p>
+            </description>
+          </requirement>
+        </behaviorSec>
+    </structural_requirements>
+    <technical_requirements>
+        <content_files>
+            <requirement ID="SIARD_1" REQLEVEL="MUST">
+                <description>
+                    <head>fileSec Representation Content Information Type Specification</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">There MUST be a minimum of one representation and, therefore minimum of one Package METS.xml and a minimum of one Representation METS.xml in a CITS SIARD compliant package.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_14" REQLEVEL="MUST">
+                <description>
+                    <head>Type</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">If the value in representation  mets/@csip:OTHERCONTENTINFORMATIONTYPE is {SIARD_1.0, SIARD2.0, SIARD2.1, Database_dump}  then the Package METS.xml fileGrp who refers to the Package METS.xml MUST have the same value.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_15" REQLEVEL="MUST">
+                <description>
+                    <head>SIARD_1.0, SIARD2.0, SIARD2.1 file occuarance requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">If the value in mets/@csip:OTHERCONTENTINFORMATIONTYPE is {SIARD_1.0, SIARD2.0, SIARD2.1}  then there MUST exist a file named [databaseName].siard in representations/[RepresentationName]/data</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_16" REQLEVEL="MUST">
+                <description>
+                    <head>SIARD_1.0, SIARD2.0, SIARD2.1 version requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The SIARD version of the SIARD-file MUST be the same as the version provided in mets/@csip:OTHERCONTENTINFORMATIONTYPE and fileSec/fileGrp/file@csip:OTHERCONTENTINFORMATIONTYPE</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_17" REQLEVEL="SHOULD">
+                <description>
+                    <head>SIARD_1.0, SIARD2.0, SIARD2.1 file validation</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The representations/[RepresentationName]/data/[databaseName].siard SHOULD be a valid SIARD file</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_18" REQLEVEL="SHOULD">
+                <description>
+                    <head>SIARD_1.0, SIARD2.0, SIARD2.1 validation reports</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">There SHOULD be minimum of one validation report in the documentation folder for the validation of the SIARD-file</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_19" REQLEVEL="MAY">
+                <description>
+                    <head>SIARD 1.0, SIARD2.0, SIARD2.1 file name</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The file name of the SIARD file representations/[RepresentationName]/data/[databaseName].siard MAY be the short database identifier of the database as specified in the 'dbname' element of the metadata.xml file in the SIARD file, but it is not recommended.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_19a" REQLEVEL="MAY" RELATEDMAT="SIARD_15 SIARD_16 SIARD_17 SIARD_18 SIARD_19">
+                <description>
+                    <head>SIARD 2.2 size implications</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">From SIARD2.2 and onwards If a .siard file is larger than a desired or imposed implementation limit then it MAY be physically split into file parts which are then placed in the same location that the .siard file would have been.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">Each file part must have the suffix _part[nnn] with nnn beginning with 001.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">In this case SIARD_15, SIARD_16, SIARD_17, SIARD_18 and SIARD_19 refer to the complete SIARD file as if it was re-assembled from the constituent parts.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_19b" REQLEVEL="MUST">
+                <description>
+                    <head>SIARD 2.2 mapping file</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">From SIARD_2.2 and onwards If a mapping file is used to describe the  physical location of segments then a file mapping.txt MUST  be provided at the same location as the .siard file</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">See SIARD2.2 section S_8.1.2.0 for further information regarding its format.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_20" REQLEVEL="MUST">
+                <description>
+                    <head>Database dump file occuarance requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">If the value in mets/@csip:OTHERCONTENTINFORMATIONTYPE is “Database_dump” then there MUST exist a proprietary database dump in representations/[RepresentationName]/data</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_22" REQLEVEL="MUST">
+                <description>
+                    <head>SIARD lobs file placement requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">If a database has LOBs outside the .siard-file then these SHOULD be stored in the same representation as the .siard-file</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_22a" REQLEVEL="MAY">
+                <description>
+                    <head>SIARD 2.2 lobs file placement requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">From SIARD2.2 and onwards a manifest file MAY be used to increase interoperability to document LOBS stored outside the .siard file. In this case  then a file manifest.txt MAY be provided next to the .siard file</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">See SIARD2.2 section  S_8.1.3-0 for further information</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_22b" REQLEVEL="MUST">
+                <description>
+                    <head>SIARD 2.2 lobs file structure</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">LOBS that are located as per SIARD2.2 MUST confirm to a defined structure.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">•A main LOB folder named [databaseName]_lobs</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">•A LOB folder for each column named after the schema no. i, table no. j, column no. k; i. e.: s[i]_t[j]_c[k]</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">•A folder named seg_0 </p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">•A LOB file named after the table no. j, column no. k and row no. l of the LOB i.e. t[j]_c[k]_r[l]</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">•A LOB file name suffix named bin (or a file extension associated with the MIME type of the lob file in case this is known (see restrictions under SIARD22 section P_4.2-6).)</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">See SIARD2.2 section L_7.1.0 for further information</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_22c" REQLEVEL="MAY">
+                <description>
+                    <head>SIARD 2.2 lobs file and zip use</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The [databaseName]_lobs/seg_[]/ folders MAY be packaged as ZIP files, named with the suffix .zip</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">See SIARD2.2 section L_7.1-1 for further information</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+        </content_files>
+        <behavior_files>
+            <requirement>
+                <description>
+                    <p xmlns="http://www.w3.org/1999/xhtml">Requirements not stated in CITS SIARD</p>
+                </description>
+            </requirement>
+        </behavior_files>
+        <metadata_files>
+            <requirement ID="SIARD_21" REQLEVEL="SHOULD">
+                <description>
+                    <head>Database dump metadata requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">There SHOULD be preservation metadata describing the proprietary database dump</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_23" REQLEVEL="SHOULD">
+                <description>
+                    <head>Submission agreement requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">There SHOULD be a submission agreement in the SIP representation that has been tailored to handle preservation of relational databases</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_24" REQLEVEL="SHOULD">
+                <description>
+                    <head>Submission agreement number of representations requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The submission agreement SHOULD describe how many representations of the database that the Producer has to submit.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_25" REQLEVEL="SHOULD">
+                <description>
+                    <head>Submission agreement range requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The submission agreement SHOULD describe whether the submitted representations of a database is 1:1 with the running database (Full SIARD export) or if any alterations have been made (only a subset of tables)</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_26" REQLEVEL="SHOULD">
+                <description>
+                    <head>Submission agreement table requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The submission agreement SHOULD list the tables that are required to be submitted to the archive and to be preserved.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_27" REQLEVEL="SHOULD">
+                <description>
+                    <head>Submission agreement SQL queries requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The submission agreement SHOULD list a set of SQL queries that are decided to be submitted to the archive and are to be preserved under the 'views'-element in metadata.xml.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_28" REQLEVEL="SHOULD" RELATEDMAT="SIARD_29 SIARD_29a SIARD_30 SIARD_31 SIARD_32 SIARD_33">
+                <description>
+                    <head>Submission agreement documentation requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The submission agreement SHOULD list the documentation that is decided to be submitted to the archive.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_29</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_29a</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_30</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_31</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_32</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_33</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_29" REQLEVEL="SHOULD">
+                <description>
+                    <head>Documentation of tables etc. requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">Tables, columns/fields, keys, coded values SHOULD be explained, preferably in the metadata.xml and via code tables or the SIARD file or alternatively in the Documentation folder.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>                        
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_29a" REQLEVEL="SHOULD">
+                <description>
+                    <head>Tables and columns created during the export</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">Tables and columns that did not exist in the original database layer (such as code tables created for archiving purposes) SHOULD be named with the prefix “Arch_” in metadata.xml</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>                        
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_30" REQLEVEL="SHOULD" RELATEDMAT="SIARD_30a SIARD_30b SIARD_30c SIARD_30d">
+                <description>
+                    <head>Documentation of system diagram requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">There SHOULD be a system diagram in the Documentation folder. Preferably an Entity/Relationship Diagramme</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_30a</dd> 
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_30b</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_30c</dd>
+                        <dt>REF:citssiard_v1_0</dt><dd>https://citssiard.dilcis.eu/#SIARD_30d</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_30a" REQLEVEL="SHOULD">
+                <description>
+                    <head>Location of documentation of system diagram requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The system diagrams SHOULD be located in a subfolder called database_diagrams</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_30b" REQLEVEL="MAY">
+                <description>
+                    <head>Fileformat of system diagram requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">System diagrams MAY be archived as PNG-files.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>0..1</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_30c" REQLEVEL="SHOULD">
+                <description>
+                    <head>Naming of original database system diagram requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">System diagrams visualising the original database SHOULD be named with the prefix “Original_”</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_30d" REQLEVEL="SHOULD">
+                <description>
+                    <head>Naming of archived database system diagram requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">System diagrams visualising the archived database SHOULD be named with the prefix “Archived_”</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_31" REQLEVEL="SHOULD">
+                <description>
+                    <head>Documentation of system dialogs requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">The (main) system-user dialogues SHOULD be documented, down to the identification of the database columns/fields involved in the dialogues, documented as a combination of:</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">*Screenshots, annotated with column/field descriptions, stored in the Documentation folder.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">*User documentation describing the system-user dialogue stored in the Documentation folder.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">*Views, if available, as part of the SIARD file.</p>
+                    <p xmlns="http://www.w3.org/1999/xhtml">*If views are not present, additional descriptions of the system (application) logic, stored in the Documentation folder</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>                        
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_32" REQLEVEL="SHOULD">
+                <description>
+                    <head>Documentation of legal context requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">Documentation of the legal context of the database and associated system SHOULD be provided in the Documentation folder.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>                        
+                    </dl>
+                </description>
+            </requirement>
+            <requirement ID="SIARD_33" REQLEVEL="MAY">
+                <description>
+                    <head>Documentation of videos and or screen dumps requriment</head>
+                    <p xmlns="http://www.w3.org/1999/xhtml">There MAY be videos or screen dumps from the system as seen from the user’s point of view in the Documentation folder.</p>
+                    <dl xmlns="http://www.w3.org/1999/xhtml">
+                        <dt>Cardinality</dt><dd>1..n</dd>                        
+                    </dl>
+                </description>
+            </requirement>
+        </metadata_files>
+    </technical_requirements>
+    <tool>
+        <name>No tools exist that currently support this profile</name>
+    </tool>
+    <Example ID="metsRootElementExample1" LABEL="METS example of root METS element for an IP following the CITS SIARD">
+        <mets:mets 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:mets="http://www.loc.gov/METS/"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS"
+            xmlns:sip="https://DILCIS.eu/XML/METS/SIPExtensionMETS"
+            OBJID="citssiard-root-mets-example" 
+            TYPE="Databases" 
+            csip:CONTENTINFORMATIONTYPE="citssiard_v1_0"
+            PROFILE="https://citssiard.dilcis.eu/profile/E-ARK-SIARD-ROOT.xml" 
+            xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd
+            http://www.w3.org/1999/xlink http://www.loc.gov/standards/mets/xlink.xsd
+            https://DILCIS.eu/XML/METS/CSIPExtensionMETS 
+            https://earkcsip.dilcis.eu/schema/DILCISExtensionMETS.xsd 
+            https://DILCIS.eu/XML/METS/SIPExtensionMETS 
+            https://earksip.dilcis.eu/schema/DILCISExtensionSIPMETS.xsd">
+        </mets:mets>
+    </Example>
+    <Example ID="fileSecExample1" LABEL="METS root example for CITS SIARD with file information together with the info from CS IP.">
+        <mets:fileSec ID="filesec-docx-file-1">
+            <mets:fileGrp ID="filegrp-representation" USE="Representations" csip:CONTENTINFORMATIONTYPE="citssiard_v1_0">
+                <mets:file ID="file-ptr-representation-mets" MIMETYPE="xml" SIZE="1338744" CREATED="2018-04-24T14:33:23.617+01:00" CHECKSUM="B1CF59678A21C2805370536AB1097735D7E9F3FDDDCAE3757426ED85F6350A48" CHECKSUMTYPE="SHA-256">
+                    <mets:FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="representations/originalformat/mets.xml"/>                        
+                </mets:file>
+            </mets:fileGrp>
+        </mets:fileSec>
+    </Example>
+    <Example ID="structMapExample1" LABEL="METS root example of the mandatory structural map including representations for CITS SIARD">
+        <mets:structMap ID="struct-map-example-1" TYPE="PHYSICAL" LABEL="CSIP">
+            <mets:div ID="struct-map-example-div" LABEL="csip-mets-example">
+                <mets:div ID="struct-map-metadata-div" LABEL="Metadata" ADMID="digiprov-premis-file-1 digiprov-premis-file-2 digiprov-premis-file-3 digiprov-premis-file-4" DMDID="dmd-ead-file">
+                </mets:div>
+                <mets:div ID="struct-map-schema-div" LABEL="Schemas">
+                    <mets:fptr FILEID="file-ptr-schema">
+                    </mets:fptr>
+                </mets:div>
+                <mets:div ID="struct-map-reps-preing-div" LABEL="Representations/SIARD_1.0">
+                    <mets:mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/originalformat/METS.xml" xlink:title="file-grp-rep-ori">
+                    </mets:mptr>
+                </mets:div>
+                <mets:div ID="struct-map-reps-sub-div" LABEL="Representations/SIARD_2.0">
+                    <mets:mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/preservationformat/METS.xml" xlink:title="file-grp-rep-pf">
+                    </mets:mptr>
+                </mets:div>
+                <mets:div ID="struct-map-reps-ing-div" LABEL="Representations/Database_dump">
+                    <mets:mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/disseminationformat/METS.xml" xlink:title="file-grp-rep-df">
+                    </mets:mptr>
+                </mets:div>
+            </mets:div>
+        </mets:structMap>
+    </Example>
+    <Appendix NUMBER="1" LABEL="Example of a whole METS document describing an submission information package following CITS SIARD.">
+        <mets:mets 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:mets="http://www.loc.gov/METS/"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:csip="https://DILCIS.eu/XML/METS/CSIPExtensionMETS"
+            xmlns:sip="https://DILCIS.eu/XML/METS/SIPExtensionMETS"
+            OBJID="citssiard-root-mets-example"
+            TYPE="Databases" 
+            csip:CONTENTINFORMATIONTYPE="citssiard_v1_0"
+            PROFILE="https://citssiard.dilcis.eu/profile/E-ARK-SIARD-ROOT.xml" 
+            xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd
+            http://www.w3.org/1999/xlink http://www.loc.gov/standards/mets/xlink.xsd
+            https://DILCIS.eu/XML/METS/CSIPExtensionMETS 
+            https://earkcsip.dilcis.eu/schema/DILCISExtensionMETS.xsd 
+            https://DILCIS.eu/XML/METS/SIPExtensionMETS 
+            https://earksip.dilcis.eu/schema/DILCISExtensionSIPMETS.xsd">
+            <mets:metsHdr CREATEDATE="2018-04-24T14:37:49.602+01:00" 
+                LASTMODDATE="2018-04-24T14:37:49.602+01:00" 
+                RECORDSTATUS="NEW" 
+                csip:OAISPACKAGETYPE="SIP">                
+                <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+                    <mets:name>Creator</mets:name>
+                    <mets:note csip:NOTETYPE="IDENTIFICATIONCODE">ID</mets:note>
+                </mets:agent>
+                <mets:agent ROLE="OTHER" TYPE="INDIVIDUAL" OTHERROLE="SUBMITTER">
+                    <mets:name>Creata Creator</mets:name>
+                    <mets:note>Phone: 08-123456, Email: creata.creator@mail.mail</mets:note>
+                </mets:agent>            
+                <mets:agent ROLE="ARCHIVIST" TYPE="ORGANIZATION">
+                    <mets:name>The Archives</mets:name>
+                    <mets:note csip:NOTETYPE="IDENTIFICATIONCODE">ID</mets:note>
+                </mets:agent>   
+                <mets:agent ROLE="PRESERVATION" TYPE="ORGANIZATION">
+                    <mets:name>The Archives</mets:name>
+                    <mets:note csip:NOTETYPE="IDENTIFICATIONCODE">ID</mets:note>
+                </mets:agent>
+                <mets:altRecordID TYPE="SUBMISSIONAGREEMENT">http://submissionagreement.se/dnr331-1144-2011/20120711/</mets:altRecordID>
+                <mets:altRecordID TYPE="PREVIOUSSUBMISSIONAGREEMENT">FM 12-2387/12726, 2007-09-19</mets:altRecordID>
+                <mets:altRecordID TYPE="REFERENCECODE">SE/RA/123456/24/P</mets:altRecordID>
+                <mets:altRecordID TYPE="PREVIOUSREFERENCECODE">SE/FM/123/123.1/123.1.3</mets:altRecordID>
+            </mets:metsHdr>
+            <mets:dmdSec ID="dmd-citssiard-file" CREATED="2018-04-24T15:27:45.702+01:00" STATUS="CURRENT">
+                <mets:mdRef LOCTYPE= "URL" 
+                    xlink:href= "metadata/descriptive/ead.xml" 
+                    xlink:type="simple"
+                    MDTYPE="EAD"
+                    MIMETYPE="application/xml" 
+                    SIZE="643"
+                    CREATED="2018-04-24T14:11:29.309+01:00"
+                    CHECKSUM="66EEDDF0A22EF57078694B67CA45DF301034556D6CB493531356C4FFE92AB6B1"
+                    CHECKSUMTYPE="SHA-256" />
+            </mets:dmdSec>
+            <mets:fileSec ID="filesec-docx-file-1">
+                <mets:fileGrp ID="filegrp-documentation" USE="Documentation">
+                    <mets:file ID="file-ptr-documentation-file1" MIMETYPE="application/vnd.openxmlformats-officedocument.wordprocessing.document" SIZE="43445212" CREATED="2012-08-15T12:08:15.432+01:00" CHECKSUM="160D71F56C2CE685CE7FBD679076FD76B3C67EE9AB5062F5EF5C99AE39C1F43B" CHECKSUMTYPE="SHA-256">
+                        <mets:FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="documentation/File1.docx"/>                        
+                    </mets:file>
+                    <mets:file ID="file-ptr-documentation-file2" MIMETYPE="application/vnd.openxmlformats-officedocument.wordprocessingml.document" SIZE="31462826" CREATED="2012-08-15T14:44:45.432+01:00" CHECKSUM="0FE9683451D0390BCDEF19CE10CFD287A2D944B6A33D246681FEF27F44FFAF1D" CHECKSUMTYPE="SHA-256">
+                        <mets:FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="documentation/File2.docx"/>                        
+                    </mets:file>
+                </mets:fileGrp>
+                <mets:fileGrp ID="filegrp-schemas" USE="Schemas">
+                    <mets:file MIMETYPE="application/xml" USE="Package METS" CHECKSUMTYPE="SHA-256" CREATED="2015-12-04T09:59:45" CHECKSUM="B565CA93CD86950503F233A7906E4DB709088BA42B9D109D4A8D6F183799603F" ID="file-ptr-schema2" SIZE="6814"> 
+                        <mets:FLocat xlink:href="schemas/METS.xsd" xlink:type="simple" LOCTYPE="URL"/> 
+                    </mets:file>
+                </mets:fileGrp>
+                <mets:fileGrp ID="filegrp-representation" USE="Representations/submission/data" csip:CONTENTINFORMATIONTYPE="citssiard_v1_0">
+                    <mets:file ID="file-ptr-representation-mets" MIMETYPE="xml" SIZE="1338744" CREATED="2018-04-24T14:33:23.617+01:00" CHECKSUM="B1CF59678A21C2805370536AB1097735D7E9F3FDDDCAE3757426ED85F6350A48" CHECKSUMTYPE="SHA-256">
+                        <mets:FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="representations/SIARD_1.0/mets.xml"/>                        
+                    </mets:file>
+                </mets:fileGrp>
+            </mets:fileSec>
+            <mets:structMap ID="struct-map-example-1" TYPE="PHYSICAL" LABEL="CSIP">
+                <mets:div ID="struct-map-example-div" LABEL="csip-mets-example">
+                    <mets:div ID="struct-map-metadata-div" LABEL="Metadata" DMDID="dmd-citssiard-file"/>
+                    <mets:div
+                        ID="struct-map-documentation-div" LABEL="Documentation">
+                        <mets:fptr FILEID="filegrp-documentation"/>
+                    </mets:div>
+                    <mets:div ID="struct-map-schema-div" LABEL="Schemas">
+                        <mets:fptr FILEID="filegrp-schemas"/>
+                    </mets:div>
+                    <mets:div ID="struct-map-reps-sub-div" LABEL="Representations/SIARD_1.0">
+                        <mets:mptr LOCTYPE="URL" xlink:type="simple" xlink:href="representations/SIARD_1.0/METS.xml" xlink:title="file-grp-rep-sub"/>
+                    </mets:div>
+                </mets:div>
+            </mets:structMap>
+        </mets:mets>
+    </Appendix>
+</METS_Profile>
