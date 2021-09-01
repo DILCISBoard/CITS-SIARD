@@ -7,7 +7,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance schemas/XMLSchema.xsd http://www.loc.gov/METS/ schemas/mets.xsd http://www.w3.org/1999/xlink schemas/xlink.xsd https://DILCIS.eu/XML/METS/CSIPExtensionMETS schemas/CSIPExtensionMETS.xsd" 
 
- OBJID="IP_18006_SIARD2_1Rep_externallobs_rep1" TYPE="Databases" csip:CONTENTINFORMATIONTYPE="SIARD2" csip:OTHERCONTENTTYPESPECIFICATION="SIARD_2.1" LABEL="representations level METS file for a representation" csip:OAISPACKAGETYPE="SIP">
+ OBJID="IP_18006_SIARD2_1Rep_externallobs_rep1" TYPE="Databases" csip:CONTENTINFORMATIONTYPE="CITS_SIARD" csip:OTHERCONTENTTYPESPECIFICATION="SIARD_2.1" csip:OAISPACKAGETYPE="SIP">
 
 	<!-- Note that the OBJID can be replaced with any ID scheme. In this example IDs carring information are used to ease understanding -->
 	<!-- PROFILE is not used at the representations level METS -->
@@ -55,7 +55,7 @@
 				<fileGrp ID="ID_SIARD_FILES">
 					<fileGrp ID="ID_SIARD_DDL">
 						<!-- the fileGrp for the central SIARD file named [databasename].siard -->
-						<file ID="ID_NORTHWIND.SIARD" csip:CONTENTINFORMATIONTYPE="SIARD2" csip:OTHERCONTENTTYPESPECIFICATION="SIARD_2.1" MIMETYPE="OTHER/SIARD" OWNERID="ID.AVID.RA.18006.NORTHWIND" 
+						<file ID="ID_NORTHWIND.SIARD" csip:CONTENTINFORMATIONTYPE="CITS_SIARD" csip:OTHERCONTENTTYPESPECIFICATION="SIARD_2.1" MIMETYPE="OTHER/SIARD" OWNERID="ID.AVID.RA.18006.NORTHWIND" 
 							CHECKSUMTYPE="MD5"	CHECKSUM="ca8771f89a030f7e06cf77bad5f8fbb3" SIZE="54562">
 							<FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="data/northwind.siard"/>
 							<transformFile TRANSFORMALGORITHM="ZIP64" TRANSFORMORDER="1" TRANSFORMTYPE="decompression"/>
@@ -137,29 +137,8 @@
 				<div LABEL="other"></div>	
 			</div>
 			<div LABEL="data">
-				<div LABEL="SIARD LOBs as outside files">  
-					<!-- The Common Specification ver 013 on page 35 states that: 
-						"Inside the representation METS file <fptr> element is used to reference all files within the representation with no exceptions.-->
-					<!-- In this example we only have 17 files in the segment, in reality we should expect 10,000 if a segment size around 1 GB is desired.-->		
-					<!-- We have to reevaluate in the CS the cost and  benefit of another 10,000 elements in the structMap - they are already there as file elements with checksum -->
-					<fptr FILEID="s0.t2.c4.r1"/>	<!-- CS: there MUST be a fptr element for all files -->				
-					<fptr FILEID="s0.t2.c4.r2"/>
-					<fptr FILEID="s0.t2.c4.r3"/>
-					<fptr FILEID="s0.t2.c4.r4"/>
-					<fptr FILEID="s0.t2.c4.r5"/>
-					<fptr FILEID="s0.t2.c4.r6"/>
-					<fptr FILEID="s0.t2.c4.r7"/>
-					<fptr FILEID="s0.t2.c4.r8"/>
-					<fptr FILEID="s0.t4.c15.r1"/>
-					<fptr FILEID="s0.t4.c15.r2"/>
-					<fptr FILEID="s0.t4.c15.r3"/>
-					<fptr FILEID="s0.t4.c15.r4"/>
-					<fptr FILEID="s0.t4.c15.r5"/>
-					<fptr FILEID="s0.t4.c15.r6"/>
-					<fptr FILEID="s0.t4.c15.r7"/>
-					<fptr FILEID="s0.t4.c15.r8"/>
-					<fptr FILEID="s0.t4.c15.r9"/>	
-					<!-- In this example we only have 17 files in the segment, in reality we should expect 10,000 if a segment size around 1 GB is desired.-->		
+				csip:CONTENTINFORMATIONTYPE="CITS_SIARD" csip:OTHERCONTENTTYPESPECIFICATION="SIARD_2.1"
+				<div ID="ID_SIARD_DDL"  >  
 				</div>	
 			</div>
 		</div>
